@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Installation - ValueObjects - PHP library</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="assets/css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="index.html">ValueObjects</a>
+            </li>
+            <li>
+                <a href="index.html">Introduction</a>
+            </li>
+            <li>
+                <a href="installation.html">Installation</a>
+            </li>
+            <li>
+                <a href="api/index.html" target="_blank">API reference <span class="glyphicon glyphicon-new-window"></span></a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Page content -->
+    <div id="page-content-wrapper">
+        <div class="content-header">
+            <h1>
+                <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
+                ValueObjects - Installation
+            </h1>
+        </div>
+        <!-- Keep all page content within the page-content inset div! -->
+        <div class="page-content inset">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Using <a href="http://getcomposer.org/">Composer</a>, require the <code>nicolopignatelli/valueobjects</code>
+package:</p>
+                    <pre>{
+    "require": {
+        "nicolopignatelli/valueobjects": "~1.1"
+    }
+}</pre>
+                    <p>Otherwise, install the library and setup the autoloader yourself.</p>
+
+                    <h2>Running the tests</h2>
+                    <p>Install the  <code>dev</code> dependencies from Composer:
+                    <p><kbd>php composer.phar install --dev</kbd></p>
+                    <p>Then, run the test suite:</p>
+                    <p><kbd>bin/phpunit</kbd></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- JavaScript -->
+<script src="assets/js/jquery-1.10.2.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+
+<!-- Custom JavaScript for the Menu Toggle -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+</script>
+</body>
+
+</html>
