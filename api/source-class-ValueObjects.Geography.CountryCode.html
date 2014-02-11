@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+	<meta name="robots" content="noindex">
+
+	<title>File ValueObjects/Geography/CountryCode.php</title>
+
+	<script type="text/javascript" src="resources/combined.js?2792926788"></script>
+	<script type="text/javascript" src="elementlist.js?2633490983"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="namespace-ValueObjects.html">ValueObjects<span></span></a>
+						<ul>
+				<li><a href="namespace-ValueObjects.DateTime.html">DateTime<span></span></a>
+						<ul>
+				<li><a href="namespace-ValueObjects.DateTime.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-ValueObjects.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-ValueObjects.Exception.html">Exception</a>
+						</li>
+				<li class="active"><a href="namespace-ValueObjects.Geography.html">Geography</a>
+						</li>
+				<li><a href="namespace-ValueObjects.Identity.html">Identity</a>
+						</li>
+				<li><a href="namespace-ValueObjects.Money.html">Money</a>
+						</li>
+				<li><a href="namespace-ValueObjects.Null.html">Null</a>
+						</li>
+				<li><a href="namespace-ValueObjects.Number.html">Number</a>
+						</li>
+				<li><a href="namespace-ValueObjects.Person.html">Person</a>
+						</li>
+				<li><a href="namespace-ValueObjects.String.html">String</a>
+						</li>
+				<li><a href="namespace-ValueObjects.Structure.html">Structure</a>
+						</li>
+				<li><a href="namespace-ValueObjects.Util.html">Util</a>
+						</li>
+				<li><a href="namespace-ValueObjects.Web.html">Web</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-ValueObjects.Geography.Address.html">Address</a></li>
+				<li><a href="class-ValueObjects.Geography.Continent.html">Continent</a></li>
+				<li><a href="class-ValueObjects.Geography.Coordinate.html">Coordinate</a></li>
+				<li><a href="class-ValueObjects.Geography.Country.html">Country</a></li>
+				<li class="active"><a href="class-ValueObjects.Geography.CountryCode.html">CountryCode</a></li>
+				<li><a href="class-ValueObjects.Geography.CountryCodeName.html">CountryCodeName</a></li>
+				<li><a href="class-ValueObjects.Geography.DistanceFormula.html">DistanceFormula</a></li>
+				<li><a href="class-ValueObjects.Geography.DistanceUnit.html">DistanceUnit</a></li>
+				<li><a href="class-ValueObjects.Geography.Ellipsoid.html">Ellipsoid</a></li>
+				<li><a href="class-ValueObjects.Geography.Latitude.html">Latitude</a></li>
+				<li><a href="class-ValueObjects.Geography.Longitude.html">Longitude</a></li>
+				<li><a href="class-ValueObjects.Geography.Street.html">Street</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-ValueObjects.Geography.html" title="Summary of ValueObjects\Geography"><span>Namespace</span></a>
+			</li>
+			<li>
+				<a href="class-ValueObjects.Geography.CountryCode.html" title="Summary of ValueObjects\Geography\CountryCode"><span>Class</span></a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<pre><code><span id="1" class="l"><a class="l" href="#1">  1: </a><span class="xlang">&lt;?php</span>
+</span><span id="2" class="l"><a class="l" href="#2">  2: </a>
+</span><span id="3" class="l"><a class="l" href="#3">  3: </a><span class="php-keyword1">namespace</span> ValueObjects\Geography;
+</span><span id="4" class="l"><a class="l" href="#4">  4: </a>
+</span><span id="5" class="l"><a class="l" href="#5">  5: </a><span class="php-keyword1">use</span> ValueObjects\Enum\Enum;
+</span><span id="6" class="l"><a class="l" href="#6">  6: </a>
+</span><span id="7" class="l"><a class="l" href="#7">  7: </a><span class="php-keyword1">class</span> <a id="CountryCode" href="#CountryCode">CountryCode</a> <span class="php-keyword1">extends</span> Enum
+</span><span id="8" class="l"><a class="l" href="#8">  8: </a>{
+</span><span id="9" class="l"><a class="l" href="#9">  9: </a>    <span class="php-keyword1">const</span> <a id="AF" href="#AF">AF</a> = <span class="php-quote">'AF'</span>;
+</span><span id="10" class="l"><a class="l" href="#10"> 10: </a>    <span class="php-keyword1">const</span> <a id="AX" href="#AX">AX</a> = <span class="php-quote">'AX'</span>;
+</span><span id="11" class="l"><a class="l" href="#11"> 11: </a>    <span class="php-keyword1">const</span> <a id="AL" href="#AL">AL</a> = <span class="php-quote">'AL'</span>;
+</span><span id="12" class="l"><a class="l" href="#12"> 12: </a>    <span class="php-keyword1">const</span> <a id="DZ" href="#DZ">DZ</a> = <span class="php-quote">'DZ'</span>;
+</span><span id="13" class="l"><a class="l" href="#13"> 13: </a>    <span class="php-keyword1">const</span> <a id="AD" href="#AD">AD</a> = <span class="php-quote">'AD'</span>;
+</span><span id="14" class="l"><a class="l" href="#14"> 14: </a>    <span class="php-keyword1">const</span> <a id="AO" href="#AO">AO</a> = <span class="php-quote">'AO'</span>;
+</span><span id="15" class="l"><a class="l" href="#15"> 15: </a>    <span class="php-keyword1">const</span> <a id="AI" href="#AI">AI</a> = <span class="php-quote">'AI'</span>;
+</span><span id="16" class="l"><a class="l" href="#16"> 16: </a>    <span class="php-keyword1">const</span> <a id="AQ" href="#AQ">AQ</a> = <span class="php-quote">'AQ'</span>;
+</span><span id="17" class="l"><a class="l" href="#17"> 17: </a>    <span class="php-keyword1">const</span> <a id="AG" href="#AG">AG</a> = <span class="php-quote">'AG'</span>;
+</span><span id="18" class="l"><a class="l" href="#18"> 18: </a>    <span class="php-keyword1">const</span> <a id="AR" href="#AR">AR</a> = <span class="php-quote">'AR'</span>;
+</span><span id="19" class="l"><a class="l" href="#19"> 19: </a>    <span class="php-keyword1">const</span> <a id="AM" href="#AM">AM</a> = <span class="php-quote">'AM'</span>;
+</span><span id="20" class="l"><a class="l" href="#20"> 20: </a>    <span class="php-keyword1">const</span> <a id="AW" href="#AW">AW</a> = <span class="php-quote">'AW'</span>;
+</span><span id="21" class="l"><a class="l" href="#21"> 21: </a>    <span class="php-keyword1">const</span> <a id="AU" href="#AU">AU</a> = <span class="php-quote">'AU'</span>;
+</span><span id="22" class="l"><a class="l" href="#22"> 22: </a>    <span class="php-keyword1">const</span> <a id="AT" href="#AT">AT</a> = <span class="php-quote">'AT'</span>;
+</span><span id="23" class="l"><a class="l" href="#23"> 23: </a>    <span class="php-keyword1">const</span> <a id="AZ" href="#AZ">AZ</a> = <span class="php-quote">'AZ'</span>;
+</span><span id="24" class="l"><a class="l" href="#24"> 24: </a>    <span class="php-keyword1">const</span> <a id="BS" href="#BS">BS</a> = <span class="php-quote">'BS'</span>;
+</span><span id="25" class="l"><a class="l" href="#25"> 25: </a>    <span class="php-keyword1">const</span> <a id="BH" href="#BH">BH</a> = <span class="php-quote">'BH'</span>;
+</span><span id="26" class="l"><a class="l" href="#26"> 26: </a>    <span class="php-keyword1">const</span> <a id="BD" href="#BD">BD</a> = <span class="php-quote">'BD'</span>;
+</span><span id="27" class="l"><a class="l" href="#27"> 27: </a>    <span class="php-keyword1">const</span> <a id="BB" href="#BB">BB</a> = <span class="php-quote">'BB'</span>;
+</span><span id="28" class="l"><a class="l" href="#28"> 28: </a>    <span class="php-keyword1">const</span> <a id="BY" href="#BY">BY</a> = <span class="php-quote">'BY'</span>;
+</span><span id="29" class="l"><a class="l" href="#29"> 29: </a>    <span class="php-keyword1">const</span> <a id="BE" href="#BE">BE</a> = <span class="php-quote">'BE'</span>;
+</span><span id="30" class="l"><a class="l" href="#30"> 30: </a>    <span class="php-keyword1">const</span> <a id="PW" href="#PW">PW</a> = <span class="php-quote">'PW'</span>;
+</span><span id="31" class="l"><a class="l" href="#31"> 31: </a>    <span class="php-keyword1">const</span> <a id="BZ" href="#BZ">BZ</a> = <span class="php-quote">'BZ'</span>;
+</span><span id="32" class="l"><a class="l" href="#32"> 32: </a>    <span class="php-keyword1">const</span> <a id="BJ" href="#BJ">BJ</a> = <span class="php-quote">'BJ'</span>;
+</span><span id="33" class="l"><a class="l" href="#33"> 33: </a>    <span class="php-keyword1">const</span> <a id="BM" href="#BM">BM</a> = <span class="php-quote">'BM'</span>;
+</span><span id="34" class="l"><a class="l" href="#34"> 34: </a>    <span class="php-keyword1">const</span> <a id="BT" href="#BT">BT</a> = <span class="php-quote">'BT'</span>;
+</span><span id="35" class="l"><a class="l" href="#35"> 35: </a>    <span class="php-keyword1">const</span> <a id="BO" href="#BO">BO</a> = <span class="php-quote">'BO'</span>;
+</span><span id="36" class="l"><a class="l" href="#36"> 36: </a>    <span class="php-keyword1">const</span> <a id="BQ" href="#BQ">BQ</a> = <span class="php-quote">'BQ'</span>;
+</span><span id="37" class="l"><a class="l" href="#37"> 37: </a>    <span class="php-keyword1">const</span> <a id="BA" href="#BA">BA</a> = <span class="php-quote">'BA'</span>;
+</span><span id="38" class="l"><a class="l" href="#38"> 38: </a>    <span class="php-keyword1">const</span> <a id="BW" href="#BW">BW</a> = <span class="php-quote">'BW'</span>;
+</span><span id="39" class="l"><a class="l" href="#39"> 39: </a>    <span class="php-keyword1">const</span> <a id="BV" href="#BV">BV</a> = <span class="php-quote">'BV'</span>;
+</span><span id="40" class="l"><a class="l" href="#40"> 40: </a>    <span class="php-keyword1">const</span> <a id="BR" href="#BR">BR</a> = <span class="php-quote">'BR'</span>;
+</span><span id="41" class="l"><a class="l" href="#41"> 41: </a>    <span class="php-keyword1">const</span> <a id="IO" href="#IO">IO</a> = <span class="php-quote">'IO'</span>;
+</span><span id="42" class="l"><a class="l" href="#42"> 42: </a>    <span class="php-keyword1">const</span> <a id="VG" href="#VG">VG</a> = <span class="php-quote">'VG'</span>;
+</span><span id="43" class="l"><a class="l" href="#43"> 43: </a>    <span class="php-keyword1">const</span> <a id="BN" href="#BN">BN</a> = <span class="php-quote">'BN'</span>;
+</span><span id="44" class="l"><a class="l" href="#44"> 44: </a>    <span class="php-keyword1">const</span> <a id="BG" href="#BG">BG</a> = <span class="php-quote">'BG'</span>;
+</span><span id="45" class="l"><a class="l" href="#45"> 45: </a>    <span class="php-keyword1">const</span> <a id="BF" href="#BF">BF</a> = <span class="php-quote">'BF'</span>;
+</span><span id="46" class="l"><a class="l" href="#46"> 46: </a>    <span class="php-keyword1">const</span> <a id="BI" href="#BI">BI</a> = <span class="php-quote">'BI'</span>;
+</span><span id="47" class="l"><a class="l" href="#47"> 47: </a>    <span class="php-keyword1">const</span> <a id="KH" href="#KH">KH</a> = <span class="php-quote">'KH'</span>;
+</span><span id="48" class="l"><a class="l" href="#48"> 48: </a>    <span class="php-keyword1">const</span> <a id="CM" href="#CM">CM</a> = <span class="php-quote">'CM'</span>;
+</span><span id="49" class="l"><a class="l" href="#49"> 49: </a>    <span class="php-keyword1">const</span> <a id="CA" href="#CA">CA</a> = <span class="php-quote">'CA'</span>;
+</span><span id="50" class="l"><a class="l" href="#50"> 50: </a>    <span class="php-keyword1">const</span> <a id="CV" href="#CV">CV</a> = <span class="php-quote">'CV'</span>;
+</span><span id="51" class="l"><a class="l" href="#51"> 51: </a>    <span class="php-keyword1">const</span> <a id="KY" href="#KY">KY</a> = <span class="php-quote">'KY'</span>;
+</span><span id="52" class="l"><a class="l" href="#52"> 52: </a>    <span class="php-keyword1">const</span> <a id="CF" href="#CF">CF</a> = <span class="php-quote">'CF'</span>;
+</span><span id="53" class="l"><a class="l" href="#53"> 53: </a>    <span class="php-keyword1">const</span> <a id="TD" href="#TD">TD</a> = <span class="php-quote">'TD'</span>;
+</span><span id="54" class="l"><a class="l" href="#54"> 54: </a>    <span class="php-keyword1">const</span> <a id="CL" href="#CL">CL</a> = <span class="php-quote">'CL'</span>;
+</span><span id="55" class="l"><a class="l" href="#55"> 55: </a>    <span class="php-keyword1">const</span> <a id="CN" href="#CN">CN</a> = <span class="php-quote">'CN'</span>;
+</span><span id="56" class="l"><a class="l" href="#56"> 56: </a>    <span class="php-keyword1">const</span> <a id="CX" href="#CX">CX</a> = <span class="php-quote">'CX'</span>;
+</span><span id="57" class="l"><a class="l" href="#57"> 57: </a>    <span class="php-keyword1">const</span> <a id="CC" href="#CC">CC</a> = <span class="php-quote">'CC'</span>;
+</span><span id="58" class="l"><a class="l" href="#58"> 58: </a>    <span class="php-keyword1">const</span> <a id="CO" href="#CO">CO</a> = <span class="php-quote">'CO'</span>;
+</span><span id="59" class="l"><a class="l" href="#59"> 59: </a>    <span class="php-keyword1">const</span> <a id="KM" href="#KM">KM</a> = <span class="php-quote">'KM'</span>;
+</span><span id="60" class="l"><a class="l" href="#60"> 60: </a>    <span class="php-keyword1">const</span> <a id="CG" href="#CG">CG</a> = <span class="php-quote">'CG'</span>;
+</span><span id="61" class="l"><a class="l" href="#61"> 61: </a>    <span class="php-keyword1">const</span> <a id="CD" href="#CD">CD</a> = <span class="php-quote">'CD'</span>;
+</span><span id="62" class="l"><a class="l" href="#62"> 62: </a>    <span class="php-keyword1">const</span> <a id="CK" href="#CK">CK</a> = <span class="php-quote">'CK'</span>;
+</span><span id="63" class="l"><a class="l" href="#63"> 63: </a>    <span class="php-keyword1">const</span> <a id="CR" href="#CR">CR</a> = <span class="php-quote">'CR'</span>;
+</span><span id="64" class="l"><a class="l" href="#64"> 64: </a>    <span class="php-keyword1">const</span> <a id="HR" href="#HR">HR</a> = <span class="php-quote">'HR'</span>;
+</span><span id="65" class="l"><a class="l" href="#65"> 65: </a>    <span class="php-keyword1">const</span> <a id="CU" href="#CU">CU</a> = <span class="php-quote">'CU'</span>;
+</span><span id="66" class="l"><a class="l" href="#66"> 66: </a>    <span class="php-keyword1">const</span> <a id="CW" href="#CW">CW</a> = <span class="php-quote">'CW'</span>;
+</span><span id="67" class="l"><a class="l" href="#67"> 67: </a>    <span class="php-keyword1">const</span> <a id="CY" href="#CY">CY</a> = <span class="php-quote">'CY'</span>;
+</span><span id="68" class="l"><a class="l" href="#68"> 68: </a>    <span class="php-keyword1">const</span> <a id="CZ" href="#CZ">CZ</a> = <span class="php-quote">'CZ'</span>;
+</span><span id="69" class="l"><a class="l" href="#69"> 69: </a>    <span class="php-keyword1">const</span> <a id="DK" href="#DK">DK</a> = <span class="php-quote">'DK'</span>;
+</span><span id="70" class="l"><a class="l" href="#70"> 70: </a>    <span class="php-keyword1">const</span> <a id="DJ" href="#DJ">DJ</a> = <span class="php-quote">'DJ'</span>;
+</span><span id="71" class="l"><a class="l" href="#71"> 71: </a>    <span class="php-keyword1">const</span> <a id="DM" href="#DM">DM</a> = <span class="php-quote">'DM'</span>;
+</span><span id="72" class="l"><a class="l" href="#72"> 72: </a>    <span class="php-keyword1">const</span> <a id="DO_" href="#DO_">DO_</a> = <span class="php-quote">'DO'</span>; <span class="php-comment">// DO is a PHP reserved keyword</span>
+</span><span id="73" class="l"><a class="l" href="#73"> 73: </a>    <span class="php-keyword1">const</span> <a id="EC" href="#EC">EC</a> = <span class="php-quote">'EC'</span>;
+</span><span id="74" class="l"><a class="l" href="#74"> 74: </a>    <span class="php-keyword1">const</span> <a id="EG" href="#EG">EG</a> = <span class="php-quote">'EG'</span>;
+</span><span id="75" class="l"><a class="l" href="#75"> 75: </a>    <span class="php-keyword1">const</span> <a id="SV" href="#SV">SV</a> = <span class="php-quote">'SV'</span>;
+</span><span id="76" class="l"><a class="l" href="#76"> 76: </a>    <span class="php-keyword1">const</span> <a id="GQ" href="#GQ">GQ</a> = <span class="php-quote">'GQ'</span>;
+</span><span id="77" class="l"><a class="l" href="#77"> 77: </a>    <span class="php-keyword1">const</span> <a id="ER" href="#ER">ER</a> = <span class="php-quote">'ER'</span>;
+</span><span id="78" class="l"><a class="l" href="#78"> 78: </a>    <span class="php-keyword1">const</span> <a id="EE" href="#EE">EE</a> = <span class="php-quote">'EE'</span>;
+</span><span id="79" class="l"><a class="l" href="#79"> 79: </a>    <span class="php-keyword1">const</span> <a id="ET" href="#ET">ET</a> = <span class="php-quote">'ET'</span>;
+</span><span id="80" class="l"><a class="l" href="#80"> 80: </a>    <span class="php-keyword1">const</span> <a id="FK" href="#FK">FK</a> = <span class="php-quote">'FK'</span>;
+</span><span id="81" class="l"><a class="l" href="#81"> 81: </a>    <span class="php-keyword1">const</span> <a id="FO" href="#FO">FO</a> = <span class="php-quote">'FO'</span>;
+</span><span id="82" class="l"><a class="l" href="#82"> 82: </a>    <span class="php-keyword1">const</span> <a id="FJ" href="#FJ">FJ</a> = <span class="php-quote">'FJ'</span>;
+</span><span id="83" class="l"><a class="l" href="#83"> 83: </a>    <span class="php-keyword1">const</span> <a id="FI" href="#FI">FI</a> = <span class="php-quote">'FI'</span>;
+</span><span id="84" class="l"><a class="l" href="#84"> 84: </a>    <span class="php-keyword1">const</span> <a id="FR" href="#FR">FR</a> = <span class="php-quote">'FR'</span>;
+</span><span id="85" class="l"><a class="l" href="#85"> 85: </a>    <span class="php-keyword1">const</span> <a id="GF" href="#GF">GF</a> = <span class="php-quote">'GF'</span>;
+</span><span id="86" class="l"><a class="l" href="#86"> 86: </a>    <span class="php-keyword1">const</span> <a id="PF" href="#PF">PF</a> = <span class="php-quote">'PF'</span>;
+</span><span id="87" class="l"><a class="l" href="#87"> 87: </a>    <span class="php-keyword1">const</span> <a id="TF" href="#TF">TF</a> = <span class="php-quote">'TF'</span>;
+</span><span id="88" class="l"><a class="l" href="#88"> 88: </a>    <span class="php-keyword1">const</span> <a id="GA" href="#GA">GA</a> = <span class="php-quote">'GA'</span>;
+</span><span id="89" class="l"><a class="l" href="#89"> 89: </a>    <span class="php-keyword1">const</span> <a id="GM" href="#GM">GM</a> = <span class="php-quote">'GM'</span>;
+</span><span id="90" class="l"><a class="l" href="#90"> 90: </a>    <span class="php-keyword1">const</span> <a id="GE" href="#GE">GE</a> = <span class="php-quote">'GE'</span>;
+</span><span id="91" class="l"><a class="l" href="#91"> 91: </a>    <span class="php-keyword1">const</span> <a id="DE" href="#DE">DE</a> = <span class="php-quote">'DE'</span>;
+</span><span id="92" class="l"><a class="l" href="#92"> 92: </a>    <span class="php-keyword1">const</span> <a id="GH" href="#GH">GH</a> = <span class="php-quote">'GH'</span>;
+</span><span id="93" class="l"><a class="l" href="#93"> 93: </a>    <span class="php-keyword1">const</span> <a id="GI" href="#GI">GI</a> = <span class="php-quote">'GI'</span>;
+</span><span id="94" class="l"><a class="l" href="#94"> 94: </a>    <span class="php-keyword1">const</span> <a id="GR" href="#GR">GR</a> = <span class="php-quote">'GR'</span>;
+</span><span id="95" class="l"><a class="l" href="#95"> 95: </a>    <span class="php-keyword1">const</span> <a id="GL" href="#GL">GL</a> = <span class="php-quote">'GL'</span>;
+</span><span id="96" class="l"><a class="l" href="#96"> 96: </a>    <span class="php-keyword1">const</span> <a id="GD" href="#GD">GD</a> = <span class="php-quote">'GD'</span>;
+</span><span id="97" class="l"><a class="l" href="#97"> 97: </a>    <span class="php-keyword1">const</span> <a id="GP" href="#GP">GP</a> = <span class="php-quote">'GP'</span>;
+</span><span id="98" class="l"><a class="l" href="#98"> 98: </a>    <span class="php-keyword1">const</span> <a id="GT" href="#GT">GT</a> = <span class="php-quote">'GT'</span>;
+</span><span id="99" class="l"><a class="l" href="#99"> 99: </a>    <span class="php-keyword1">const</span> <a id="GG" href="#GG">GG</a> = <span class="php-quote">'GG'</span>;
+</span><span id="100" class="l"><a class="l" href="#100">100: </a>    <span class="php-keyword1">const</span> <a id="GN" href="#GN">GN</a> = <span class="php-quote">'GN'</span>;
+</span><span id="101" class="l"><a class="l" href="#101">101: </a>    <span class="php-keyword1">const</span> <a id="GW" href="#GW">GW</a> = <span class="php-quote">'GW'</span>;
+</span><span id="102" class="l"><a class="l" href="#102">102: </a>    <span class="php-keyword1">const</span> <a id="GY" href="#GY">GY</a> = <span class="php-quote">'GY'</span>;
+</span><span id="103" class="l"><a class="l" href="#103">103: </a>    <span class="php-keyword1">const</span> <a id="HT" href="#HT">HT</a> = <span class="php-quote">'HT'</span>;
+</span><span id="104" class="l"><a class="l" href="#104">104: </a>    <span class="php-keyword1">const</span> <a id="HM" href="#HM">HM</a> = <span class="php-quote">'HM'</span>;
+</span><span id="105" class="l"><a class="l" href="#105">105: </a>    <span class="php-keyword1">const</span> <a id="HN" href="#HN">HN</a> = <span class="php-quote">'HN'</span>;
+</span><span id="106" class="l"><a class="l" href="#106">106: </a>    <span class="php-keyword1">const</span> <a id="HK" href="#HK">HK</a> = <span class="php-quote">'HK'</span>;
+</span><span id="107" class="l"><a class="l" href="#107">107: </a>    <span class="php-keyword1">const</span> <a id="HU" href="#HU">HU</a> = <span class="php-quote">'HU'</span>;
+</span><span id="108" class="l"><a class="l" href="#108">108: </a>    <span class="php-keyword1">const</span> <a id="IS" href="#IS">IS</a> = <span class="php-quote">'IS'</span>;
+</span><span id="109" class="l"><a class="l" href="#109">109: </a>    <span class="php-keyword1">const</span> <a id="IN" href="#IN">IN</a> = <span class="php-quote">'IN'</span>;
+</span><span id="110" class="l"><a class="l" href="#110">110: </a>    <span class="php-keyword1">const</span> <a id="ID" href="#ID">ID</a> = <span class="php-quote">'ID'</span>;
+</span><span id="111" class="l"><a class="l" href="#111">111: </a>    <span class="php-keyword1">const</span> <a id="IR" href="#IR">IR</a> = <span class="php-quote">'IR'</span>;
+</span><span id="112" class="l"><a class="l" href="#112">112: </a>    <span class="php-keyword1">const</span> <a id="IQ" href="#IQ">IQ</a> = <span class="php-quote">'IQ'</span>;
+</span><span id="113" class="l"><a class="l" href="#113">113: </a>    <span class="php-keyword1">const</span> <a id="IE" href="#IE">IE</a> = <span class="php-quote">'IE'</span>;
+</span><span id="114" class="l"><a class="l" href="#114">114: </a>    <span class="php-keyword1">const</span> <a id="IM" href="#IM">IM</a> = <span class="php-quote">'IM'</span>;
+</span><span id="115" class="l"><a class="l" href="#115">115: </a>    <span class="php-keyword1">const</span> <a id="IL" href="#IL">IL</a> = <span class="php-quote">'IL'</span>;
+</span><span id="116" class="l"><a class="l" href="#116">116: </a>    <span class="php-keyword1">const</span> <a id="IT" href="#IT">IT</a> = <span class="php-quote">'IT'</span>;
+</span><span id="117" class="l"><a class="l" href="#117">117: </a>    <span class="php-keyword1">const</span> <a id="CI" href="#CI">CI</a> = <span class="php-quote">'CI'</span>;
+</span><span id="118" class="l"><a class="l" href="#118">118: </a>    <span class="php-keyword1">const</span> <a id="JM" href="#JM">JM</a> = <span class="php-quote">'JM'</span>;
+</span><span id="119" class="l"><a class="l" href="#119">119: </a>    <span class="php-keyword1">const</span> <a id="JP" href="#JP">JP</a> = <span class="php-quote">'JP'</span>;
+</span><span id="120" class="l"><a class="l" href="#120">120: </a>    <span class="php-keyword1">const</span> <a id="JE" href="#JE">JE</a> = <span class="php-quote">'JE'</span>;
+</span><span id="121" class="l"><a class="l" href="#121">121: </a>    <span class="php-keyword1">const</span> <a id="JO" href="#JO">JO</a> = <span class="php-quote">'JO'</span>;
+</span><span id="122" class="l"><a class="l" href="#122">122: </a>    <span class="php-keyword1">const</span> <a id="KZ" href="#KZ">KZ</a> = <span class="php-quote">'KZ'</span>;
+</span><span id="123" class="l"><a class="l" href="#123">123: </a>    <span class="php-keyword1">const</span> <a id="KE" href="#KE">KE</a> = <span class="php-quote">'KE'</span>;
+</span><span id="124" class="l"><a class="l" href="#124">124: </a>    <span class="php-keyword1">const</span> <a id="KI" href="#KI">KI</a> = <span class="php-quote">'KI'</span>;
+</span><span id="125" class="l"><a class="l" href="#125">125: </a>    <span class="php-keyword1">const</span> <a id="KW" href="#KW">KW</a> = <span class="php-quote">'KW'</span>;
+</span><span id="126" class="l"><a class="l" href="#126">126: </a>    <span class="php-keyword1">const</span> <a id="KG" href="#KG">KG</a> = <span class="php-quote">'KG'</span>;
+</span><span id="127" class="l"><a class="l" href="#127">127: </a>    <span class="php-keyword1">const</span> <a id="LA" href="#LA">LA</a> = <span class="php-quote">'LA'</span>;
+</span><span id="128" class="l"><a class="l" href="#128">128: </a>    <span class="php-keyword1">const</span> <a id="LV" href="#LV">LV</a> = <span class="php-quote">'LV'</span>;
+</span><span id="129" class="l"><a class="l" href="#129">129: </a>    <span class="php-keyword1">const</span> <a id="LB" href="#LB">LB</a> = <span class="php-quote">'LB'</span>;
+</span><span id="130" class="l"><a class="l" href="#130">130: </a>    <span class="php-keyword1">const</span> <a id="LS" href="#LS">LS</a> = <span class="php-quote">'LS'</span>;
+</span><span id="131" class="l"><a class="l" href="#131">131: </a>    <span class="php-keyword1">const</span> <a id="LR" href="#LR">LR</a> = <span class="php-quote">'LR'</span>;
+</span><span id="132" class="l"><a class="l" href="#132">132: </a>    <span class="php-keyword1">const</span> <a id="LY" href="#LY">LY</a> = <span class="php-quote">'LY'</span>;
+</span><span id="133" class="l"><a class="l" href="#133">133: </a>    <span class="php-keyword1">const</span> <a id="LI" href="#LI">LI</a> = <span class="php-quote">'LI'</span>;
+</span><span id="134" class="l"><a class="l" href="#134">134: </a>    <span class="php-keyword1">const</span> <a id="LT" href="#LT">LT</a> = <span class="php-quote">'LT'</span>;
+</span><span id="135" class="l"><a class="l" href="#135">135: </a>    <span class="php-keyword1">const</span> <a id="LU" href="#LU">LU</a> = <span class="php-quote">'LU'</span>;
+</span><span id="136" class="l"><a class="l" href="#136">136: </a>    <span class="php-keyword1">const</span> <a id="MO" href="#MO">MO</a> = <span class="php-quote">'MO'</span>;
+</span><span id="137" class="l"><a class="l" href="#137">137: </a>    <span class="php-keyword1">const</span> <a id="MK" href="#MK">MK</a> = <span class="php-quote">'MK'</span>;
+</span><span id="138" class="l"><a class="l" href="#138">138: </a>    <span class="php-keyword1">const</span> <a id="MG" href="#MG">MG</a> = <span class="php-quote">'MG'</span>;
+</span><span id="139" class="l"><a class="l" href="#139">139: </a>    <span class="php-keyword1">const</span> <a id="MW" href="#MW">MW</a> = <span class="php-quote">'MW'</span>;
+</span><span id="140" class="l"><a class="l" href="#140">140: </a>    <span class="php-keyword1">const</span> <a id="MY" href="#MY">MY</a> = <span class="php-quote">'MY'</span>;
+</span><span id="141" class="l"><a class="l" href="#141">141: </a>    <span class="php-keyword1">const</span> <a id="MV" href="#MV">MV</a> = <span class="php-quote">'MV'</span>;
+</span><span id="142" class="l"><a class="l" href="#142">142: </a>    <span class="php-keyword1">const</span> <a id="ML" href="#ML">ML</a> = <span class="php-quote">'ML'</span>;
+</span><span id="143" class="l"><a class="l" href="#143">143: </a>    <span class="php-keyword1">const</span> <a id="MT" href="#MT">MT</a> = <span class="php-quote">'MT'</span>;
+</span><span id="144" class="l"><a class="l" href="#144">144: </a>    <span class="php-keyword1">const</span> <a id="MH" href="#MH">MH</a> = <span class="php-quote">'MH'</span>;
+</span><span id="145" class="l"><a class="l" href="#145">145: </a>    <span class="php-keyword1">const</span> <a id="MQ" href="#MQ">MQ</a> = <span class="php-quote">'MQ'</span>;
+</span><span id="146" class="l"><a class="l" href="#146">146: </a>    <span class="php-keyword1">const</span> <a id="MR" href="#MR">MR</a> = <span class="php-quote">'MR'</span>;
+</span><span id="147" class="l"><a class="l" href="#147">147: </a>    <span class="php-keyword1">const</span> <a id="MU" href="#MU">MU</a> = <span class="php-quote">'MU'</span>;
+</span><span id="148" class="l"><a class="l" href="#148">148: </a>    <span class="php-keyword1">const</span> <a id="YT" href="#YT">YT</a> = <span class="php-quote">'YT'</span>;
+</span><span id="149" class="l"><a class="l" href="#149">149: </a>    <span class="php-keyword1">const</span> <a id="MX" href="#MX">MX</a> = <span class="php-quote">'MX'</span>;
+</span><span id="150" class="l"><a class="l" href="#150">150: </a>    <span class="php-keyword1">const</span> <a id="FM" href="#FM">FM</a> = <span class="php-quote">'FM'</span>;
+</span><span id="151" class="l"><a class="l" href="#151">151: </a>    <span class="php-keyword1">const</span> <a id="MD" href="#MD">MD</a> = <span class="php-quote">'MD'</span>;
+</span><span id="152" class="l"><a class="l" href="#152">152: </a>    <span class="php-keyword1">const</span> <a id="MC" href="#MC">MC</a> = <span class="php-quote">'MC'</span>;
+</span><span id="153" class="l"><a class="l" href="#153">153: </a>    <span class="php-keyword1">const</span> <a id="MN" href="#MN">MN</a> = <span class="php-quote">'MN'</span>;
+</span><span id="154" class="l"><a class="l" href="#154">154: </a>    <span class="php-keyword1">const</span> <a id="ME" href="#ME">ME</a> = <span class="php-quote">'ME'</span>;
+</span><span id="155" class="l"><a class="l" href="#155">155: </a>    <span class="php-keyword1">const</span> <a id="MS" href="#MS">MS</a> = <span class="php-quote">'MS'</span>;
+</span><span id="156" class="l"><a class="l" href="#156">156: </a>    <span class="php-keyword1">const</span> <a id="MA" href="#MA">MA</a> = <span class="php-quote">'MA'</span>;
+</span><span id="157" class="l"><a class="l" href="#157">157: </a>    <span class="php-keyword1">const</span> <a id="MZ" href="#MZ">MZ</a> = <span class="php-quote">'MZ'</span>;
+</span><span id="158" class="l"><a class="l" href="#158">158: </a>    <span class="php-keyword1">const</span> <a id="MM" href="#MM">MM</a> = <span class="php-quote">'MM'</span>;
+</span><span id="159" class="l"><a class="l" href="#159">159: </a>    <span class="php-keyword1">const</span> <a id="NA" href="#NA">NA</a> = <span class="php-quote">'NA'</span>;
+</span><span id="160" class="l"><a class="l" href="#160">160: </a>    <span class="php-keyword1">const</span> <a id="NR" href="#NR">NR</a> = <span class="php-quote">'NR'</span>;
+</span><span id="161" class="l"><a class="l" href="#161">161: </a>    <span class="php-keyword1">const</span> <a id="NP" href="#NP">NP</a> = <span class="php-quote">'NP'</span>;
+</span><span id="162" class="l"><a class="l" href="#162">162: </a>    <span class="php-keyword1">const</span> <a id="NL" href="#NL">NL</a> = <span class="php-quote">'NL'</span>;
+</span><span id="163" class="l"><a class="l" href="#163">163: </a>    <span class="php-keyword1">const</span> <a id="AN" href="#AN">AN</a> = <span class="php-quote">'AN'</span>;
+</span><span id="164" class="l"><a class="l" href="#164">164: </a>    <span class="php-keyword1">const</span> <a id="NC" href="#NC">NC</a> = <span class="php-quote">'NC'</span>;
+</span><span id="165" class="l"><a class="l" href="#165">165: </a>    <span class="php-keyword1">const</span> <a id="NZ" href="#NZ">NZ</a> = <span class="php-quote">'NZ'</span>;
+</span><span id="166" class="l"><a class="l" href="#166">166: </a>    <span class="php-keyword1">const</span> <a id="NI" href="#NI">NI</a> = <span class="php-quote">'NI'</span>;
+</span><span id="167" class="l"><a class="l" href="#167">167: </a>    <span class="php-keyword1">const</span> <a id="NE" href="#NE">NE</a> = <span class="php-quote">'NE'</span>;
+</span><span id="168" class="l"><a class="l" href="#168">168: </a>    <span class="php-keyword1">const</span> <a id="NG" href="#NG">NG</a> = <span class="php-quote">'NG'</span>;
+</span><span id="169" class="l"><a class="l" href="#169">169: </a>    <span class="php-keyword1">const</span> <a id="NU" href="#NU">NU</a> = <span class="php-quote">'NU'</span>;
+</span><span id="170" class="l"><a class="l" href="#170">170: </a>    <span class="php-keyword1">const</span> <a id="NF" href="#NF">NF</a> = <span class="php-quote">'NF'</span>;
+</span><span id="171" class="l"><a class="l" href="#171">171: </a>    <span class="php-keyword1">const</span> <a id="KP" href="#KP">KP</a> = <span class="php-quote">'KP'</span>;
+</span><span id="172" class="l"><a class="l" href="#172">172: </a>    <span class="php-keyword1">const</span> <a id="NO" href="#NO">NO</a> = <span class="php-quote">'NO'</span>;
+</span><span id="173" class="l"><a class="l" href="#173">173: </a>    <span class="php-keyword1">const</span> <a id="OM" href="#OM">OM</a> = <span class="php-quote">'OM'</span>;
+</span><span id="174" class="l"><a class="l" href="#174">174: </a>    <span class="php-keyword1">const</span> <a id="PK" href="#PK">PK</a> = <span class="php-quote">'PK'</span>;
+</span><span id="175" class="l"><a class="l" href="#175">175: </a>    <span class="php-keyword1">const</span> <a id="PS" href="#PS">PS</a> = <span class="php-quote">'PS'</span>;
+</span><span id="176" class="l"><a class="l" href="#176">176: </a>    <span class="php-keyword1">const</span> <a id="PA" href="#PA">PA</a> = <span class="php-quote">'PA'</span>;
+</span><span id="177" class="l"><a class="l" href="#177">177: </a>    <span class="php-keyword1">const</span> <a id="PG" href="#PG">PG</a> = <span class="php-quote">'PG'</span>;
+</span><span id="178" class="l"><a class="l" href="#178">178: </a>    <span class="php-keyword1">const</span> <a id="PY" href="#PY">PY</a> = <span class="php-quote">'PY'</span>;
+</span><span id="179" class="l"><a class="l" href="#179">179: </a>    <span class="php-keyword1">const</span> <a id="PE" href="#PE">PE</a> = <span class="php-quote">'PE'</span>;
+</span><span id="180" class="l"><a class="l" href="#180">180: </a>    <span class="php-keyword1">const</span> <a id="PH" href="#PH">PH</a> = <span class="php-quote">'PH'</span>;
+</span><span id="181" class="l"><a class="l" href="#181">181: </a>    <span class="php-keyword1">const</span> <a id="PN" href="#PN">PN</a> = <span class="php-quote">'PN'</span>;
+</span><span id="182" class="l"><a class="l" href="#182">182: </a>    <span class="php-keyword1">const</span> <a id="PL" href="#PL">PL</a> = <span class="php-quote">'PL'</span>;
+</span><span id="183" class="l"><a class="l" href="#183">183: </a>    <span class="php-keyword1">const</span> <a id="PT" href="#PT">PT</a> = <span class="php-quote">'PT'</span>;
+</span><span id="184" class="l"><a class="l" href="#184">184: </a>    <span class="php-keyword1">const</span> <a id="QA" href="#QA">QA</a> = <span class="php-quote">'QA'</span>;
+</span><span id="185" class="l"><a class="l" href="#185">185: </a>    <span class="php-keyword1">const</span> <a id="RE" href="#RE">RE</a> = <span class="php-quote">'RE'</span>;
+</span><span id="186" class="l"><a class="l" href="#186">186: </a>    <span class="php-keyword1">const</span> <a id="RO" href="#RO">RO</a> = <span class="php-quote">'RO'</span>;
+</span><span id="187" class="l"><a class="l" href="#187">187: </a>    <span class="php-keyword1">const</span> <a id="RU" href="#RU">RU</a> = <span class="php-quote">'RU'</span>;
+</span><span id="188" class="l"><a class="l" href="#188">188: </a>    <span class="php-keyword1">const</span> <a id="RW" href="#RW">RW</a> = <span class="php-quote">'RW'</span>;
+</span><span id="189" class="l"><a class="l" href="#189">189: </a>    <span class="php-keyword1">const</span> <a id="BL" href="#BL">BL</a> = <span class="php-quote">'BL'</span>;
+</span><span id="190" class="l"><a class="l" href="#190">190: </a>    <span class="php-keyword1">const</span> <a id="SH" href="#SH">SH</a> = <span class="php-quote">'SH'</span>;
+</span><span id="191" class="l"><a class="l" href="#191">191: </a>    <span class="php-keyword1">const</span> <a id="KN" href="#KN">KN</a> = <span class="php-quote">'KN'</span>;
+</span><span id="192" class="l"><a class="l" href="#192">192: </a>    <span class="php-keyword1">const</span> <a id="LC" href="#LC">LC</a> = <span class="php-quote">'LC'</span>;
+</span><span id="193" class="l"><a class="l" href="#193">193: </a>    <span class="php-keyword1">const</span> <a id="MF" href="#MF">MF</a> = <span class="php-quote">'MF'</span>;
+</span><span id="194" class="l"><a class="l" href="#194">194: </a>    <span class="php-keyword1">const</span> <a id="SX" href="#SX">SX</a> = <span class="php-quote">'SX'</span>;
+</span><span id="195" class="l"><a class="l" href="#195">195: </a>    <span class="php-keyword1">const</span> <a id="PM" href="#PM">PM</a> = <span class="php-quote">'PM'</span>;
+</span><span id="196" class="l"><a class="l" href="#196">196: </a>    <span class="php-keyword1">const</span> <a id="VC" href="#VC">VC</a> = <span class="php-quote">'VC'</span>;
+</span><span id="197" class="l"><a class="l" href="#197">197: </a>    <span class="php-keyword1">const</span> <a id="WS" href="#WS">WS</a> = <span class="php-quote">'WS'</span>;
+</span><span id="198" class="l"><a class="l" href="#198">198: </a>    <span class="php-keyword1">const</span> <a id="SM" href="#SM">SM</a> = <span class="php-quote">'SM'</span>;
+</span><span id="199" class="l"><a class="l" href="#199">199: </a>    <span class="php-keyword1">const</span> <a id="ST" href="#ST">ST</a> = <span class="php-quote">'ST'</span>;
+</span><span id="200" class="l"><a class="l" href="#200">200: </a>    <span class="php-keyword1">const</span> <a id="SA" href="#SA">SA</a> = <span class="php-quote">'SA'</span>;
+</span><span id="201" class="l"><a class="l" href="#201">201: </a>    <span class="php-keyword1">const</span> <a id="SN" href="#SN">SN</a> = <span class="php-quote">'SN'</span>;
+</span><span id="202" class="l"><a class="l" href="#202">202: </a>    <span class="php-keyword1">const</span> <a id="RS" href="#RS">RS</a> = <span class="php-quote">'RS'</span>;
+</span><span id="203" class="l"><a class="l" href="#203">203: </a>    <span class="php-keyword1">const</span> <a id="SC" href="#SC">SC</a> = <span class="php-quote">'SC'</span>;
+</span><span id="204" class="l"><a class="l" href="#204">204: </a>    <span class="php-keyword1">const</span> <a id="SL" href="#SL">SL</a> = <span class="php-quote">'SL'</span>;
+</span><span id="205" class="l"><a class="l" href="#205">205: </a>    <span class="php-keyword1">const</span> <a id="SG" href="#SG">SG</a> = <span class="php-quote">'SG'</span>;
+</span><span id="206" class="l"><a class="l" href="#206">206: </a>    <span class="php-keyword1">const</span> <a id="SK" href="#SK">SK</a> = <span class="php-quote">'SK'</span>;
+</span><span id="207" class="l"><a class="l" href="#207">207: </a>    <span class="php-keyword1">const</span> <a id="SI" href="#SI">SI</a> = <span class="php-quote">'SI'</span>;
+</span><span id="208" class="l"><a class="l" href="#208">208: </a>    <span class="php-keyword1">const</span> <a id="SB" href="#SB">SB</a> = <span class="php-quote">'SB'</span>;
+</span><span id="209" class="l"><a class="l" href="#209">209: </a>    <span class="php-keyword1">const</span> <a id="SO" href="#SO">SO</a> = <span class="php-quote">'SO'</span>;
+</span><span id="210" class="l"><a class="l" href="#210">210: </a>    <span class="php-keyword1">const</span> <a id="ZA" href="#ZA">ZA</a> = <span class="php-quote">'ZA'</span>;
+</span><span id="211" class="l"><a class="l" href="#211">211: </a>    <span class="php-keyword1">const</span> <a id="GS" href="#GS">GS</a> = <span class="php-quote">'GS'</span>;
+</span><span id="212" class="l"><a class="l" href="#212">212: </a>    <span class="php-keyword1">const</span> <a id="KR" href="#KR">KR</a> = <span class="php-quote">'KR'</span>;
+</span><span id="213" class="l"><a class="l" href="#213">213: </a>    <span class="php-keyword1">const</span> <a id="SS" href="#SS">SS</a> = <span class="php-quote">'SS'</span>;
+</span><span id="214" class="l"><a class="l" href="#214">214: </a>    <span class="php-keyword1">const</span> <a id="ES" href="#ES">ES</a> = <span class="php-quote">'ES'</span>;
+</span><span id="215" class="l"><a class="l" href="#215">215: </a>    <span class="php-keyword1">const</span> <a id="LK" href="#LK">LK</a> = <span class="php-quote">'LK'</span>;
+</span><span id="216" class="l"><a class="l" href="#216">216: </a>    <span class="php-keyword1">const</span> <a id="SD" href="#SD">SD</a> = <span class="php-quote">'SD'</span>;
+</span><span id="217" class="l"><a class="l" href="#217">217: </a>    <span class="php-keyword1">const</span> <a id="SR" href="#SR">SR</a> = <span class="php-quote">'SR'</span>;
+</span><span id="218" class="l"><a class="l" href="#218">218: </a>    <span class="php-keyword1">const</span> <a id="SJ" href="#SJ">SJ</a> = <span class="php-quote">'SJ'</span>;
+</span><span id="219" class="l"><a class="l" href="#219">219: </a>    <span class="php-keyword1">const</span> <a id="SZ" href="#SZ">SZ</a> = <span class="php-quote">'SZ'</span>;
+</span><span id="220" class="l"><a class="l" href="#220">220: </a>    <span class="php-keyword1">const</span> <a id="SE" href="#SE">SE</a> = <span class="php-quote">'SE'</span>;
+</span><span id="221" class="l"><a class="l" href="#221">221: </a>    <span class="php-keyword1">const</span> <a id="CH" href="#CH">CH</a> = <span class="php-quote">'CH'</span>;
+</span><span id="222" class="l"><a class="l" href="#222">222: </a>    <span class="php-keyword1">const</span> <a id="SY" href="#SY">SY</a> = <span class="php-quote">'SY'</span>;
+</span><span id="223" class="l"><a class="l" href="#223">223: </a>    <span class="php-keyword1">const</span> <a id="TW" href="#TW">TW</a> = <span class="php-quote">'TW'</span>;
+</span><span id="224" class="l"><a class="l" href="#224">224: </a>    <span class="php-keyword1">const</span> <a id="TJ" href="#TJ">TJ</a> = <span class="php-quote">'TJ'</span>;
+</span><span id="225" class="l"><a class="l" href="#225">225: </a>    <span class="php-keyword1">const</span> <a id="TZ" href="#TZ">TZ</a> = <span class="php-quote">'TZ'</span>;
+</span><span id="226" class="l"><a class="l" href="#226">226: </a>    <span class="php-keyword1">const</span> <a id="TH" href="#TH">TH</a> = <span class="php-quote">'TH'</span>;
+</span><span id="227" class="l"><a class="l" href="#227">227: </a>    <span class="php-keyword1">const</span> <a id="TL" href="#TL">TL</a> = <span class="php-quote">'TL'</span>;
+</span><span id="228" class="l"><a class="l" href="#228">228: </a>    <span class="php-keyword1">const</span> <a id="TG" href="#TG">TG</a> = <span class="php-quote">'TG'</span>;
+</span><span id="229" class="l"><a class="l" href="#229">229: </a>    <span class="php-keyword1">const</span> <a id="TK" href="#TK">TK</a> = <span class="php-quote">'TK'</span>;
+</span><span id="230" class="l"><a class="l" href="#230">230: </a>    <span class="php-keyword1">const</span> <a id="TO" href="#TO">TO</a> = <span class="php-quote">'TO'</span>;
+</span><span id="231" class="l"><a class="l" href="#231">231: </a>    <span class="php-keyword1">const</span> <a id="TT" href="#TT">TT</a> = <span class="php-quote">'TT'</span>;
+</span><span id="232" class="l"><a class="l" href="#232">232: </a>    <span class="php-keyword1">const</span> <a id="TN" href="#TN">TN</a> = <span class="php-quote">'TN'</span>;
+</span><span id="233" class="l"><a class="l" href="#233">233: </a>    <span class="php-keyword1">const</span> <a id="TR" href="#TR">TR</a> = <span class="php-quote">'TR'</span>;
+</span><span id="234" class="l"><a class="l" href="#234">234: </a>    <span class="php-keyword1">const</span> <a id="TM" href="#TM">TM</a> = <span class="php-quote">'TM'</span>;
+</span><span id="235" class="l"><a class="l" href="#235">235: </a>    <span class="php-keyword1">const</span> <a id="TC" href="#TC">TC</a> = <span class="php-quote">'TC'</span>;
+</span><span id="236" class="l"><a class="l" href="#236">236: </a>    <span class="php-keyword1">const</span> <a id="TV" href="#TV">TV</a> = <span class="php-quote">'TV'</span>;
+</span><span id="237" class="l"><a class="l" href="#237">237: </a>    <span class="php-keyword1">const</span> <a id="UG" href="#UG">UG</a> = <span class="php-quote">'UG'</span>;
+</span><span id="238" class="l"><a class="l" href="#238">238: </a>    <span class="php-keyword1">const</span> <a id="UA" href="#UA">UA</a> = <span class="php-quote">'UA'</span>;
+</span><span id="239" class="l"><a class="l" href="#239">239: </a>    <span class="php-keyword1">const</span> <a id="AE" href="#AE">AE</a> = <span class="php-quote">'AE'</span>;
+</span><span id="240" class="l"><a class="l" href="#240">240: </a>    <span class="php-keyword1">const</span> <a id="GB" href="#GB">GB</a> = <span class="php-quote">'GB'</span>;
+</span><span id="241" class="l"><a class="l" href="#241">241: </a>    <span class="php-keyword1">const</span> <a id="US" href="#US">US</a> = <span class="php-quote">'US'</span>;
+</span><span id="242" class="l"><a class="l" href="#242">242: </a>    <span class="php-keyword1">const</span> <a id="UY" href="#UY">UY</a> = <span class="php-quote">'UY'</span>;
+</span><span id="243" class="l"><a class="l" href="#243">243: </a>    <span class="php-keyword1">const</span> <a id="UZ" href="#UZ">UZ</a> = <span class="php-quote">'UZ'</span>;
+</span><span id="244" class="l"><a class="l" href="#244">244: </a>    <span class="php-keyword1">const</span> <a id="VU" href="#VU">VU</a> = <span class="php-quote">'VU'</span>;
+</span><span id="245" class="l"><a class="l" href="#245">245: </a>    <span class="php-keyword1">const</span> <a id="VA" href="#VA">VA</a> = <span class="php-quote">'VA'</span>;
+</span><span id="246" class="l"><a class="l" href="#246">246: </a>    <span class="php-keyword1">const</span> <a id="VE" href="#VE">VE</a> = <span class="php-quote">'VE'</span>;
+</span><span id="247" class="l"><a class="l" href="#247">247: </a>    <span class="php-keyword1">const</span> <a id="VN" href="#VN">VN</a> = <span class="php-quote">'VN'</span>;
+</span><span id="248" class="l"><a class="l" href="#248">248: </a>    <span class="php-keyword1">const</span> <a id="WF" href="#WF">WF</a> = <span class="php-quote">'WF'</span>;
+</span><span id="249" class="l"><a class="l" href="#249">249: </a>    <span class="php-keyword1">const</span> <a id="EH" href="#EH">EH</a> = <span class="php-quote">'EH'</span>;
+</span><span id="250" class="l"><a class="l" href="#250">250: </a>    <span class="php-keyword1">const</span> <a id="YE" href="#YE">YE</a> = <span class="php-quote">'YE'</span>;
+</span><span id="251" class="l"><a class="l" href="#251">251: </a>    <span class="php-keyword1">const</span> <a id="ZM" href="#ZM">ZM</a> = <span class="php-quote">'ZM'</span>;
+</span><span id="252" class="l"><a class="l" href="#252">252: </a>    <span class="php-keyword1">const</span> <a id="ZW" href="#ZW">ZW</a> = <span class="php-quote">'ZW'</span>;
+</span><span id="253" class="l"><a class="l" href="#253">253: </a>}
+</span><span id="254" class="l"><a class="l" href="#254">254: </a></span></code></pre>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
